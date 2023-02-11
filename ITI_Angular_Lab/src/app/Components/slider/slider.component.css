@@ -1,0 +1,25 @@
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+}
+
+img {
+  height: 500px;
+  width: 600px;
+  object-fit: contain;
+}
+
+button {
+  background-color: lightgray;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

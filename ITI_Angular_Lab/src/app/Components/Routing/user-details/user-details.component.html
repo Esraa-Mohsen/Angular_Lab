@@ -1,0 +1,45 @@
+<div class="d-flex justify-content-center bg-light">
+  <div class="card m-5 p-3" style="width: 18rem">
+    <div class="card-body">
+      <h6 class="card-title">
+        <strong class="text-primary">Name:</strong> {{ user.name }}
+      </h6>
+      <p class="card-text">
+        <strong class="text-primary">Id: </strong>{{ ID }}
+      </p>
+      <p class="card-text">
+        <strong class="text-primary">User Name:</strong> {{ user.username }}
+      </p>
+      <p class="card-text"><strong class="text-primary">Address:</strong></p>
+      <ul>
+        <li>
+          <p class="card-text">
+            <strong class="text-secondary"> Street:</strong>
+            {{ user.address.street }}
+          </p>
+        </li>
+        <li>
+          <p class="card-text">
+            <strong class="text-secondary"> City:</strong>
+            {{ user.address.city }}
+          </p>
+        </li>
+        <li>
+          <p class="card-text">
+            <strong class="text-secondary"> Suite:</strong>
+            {{ user.address.suite }}
+          </p>
+        </li>
+      </ul>
+      <p class="card-text">
+        <strong class="text-primary">Email:</strong> {{ user.email }}
+      </p>
+      <p class="card-text">
+        <strong class="text-primary">Phone:</strong> {{ user.phone }}
+      </p>
+      <p class="card-text">
+        <strong class="text-primary">Website:</strong> {{ user.website }}
+      </p>
+    </div>
+  </div>
+</div>

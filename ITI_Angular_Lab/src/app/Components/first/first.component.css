@@ -1,0 +1,21 @@
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 200px;
+}
+
+button {
+  background-color: lightgray;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 18px;
+}

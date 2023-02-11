@@ -1,0 +1,34 @@
+
+<div class="m-5">
+  <table class="table table-striped table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        *ngFor="let u of users"
+        [ngClass]="{ 'table-active': hover }"
+        (mouseenter)="hover = true"
+        (mouseleave)="hover = false"
+      >
+        <th scope="row">{{ u.id }}</th>
+        <td>{{ u.username }}</td>
+        <td>{{ u.email }}</td>
+        <td>
+          <a
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLinkActive="active"
+            routerLink="/profile/{{ u.id }}"
+            class="btn btn-primary"
+            >Details</a
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

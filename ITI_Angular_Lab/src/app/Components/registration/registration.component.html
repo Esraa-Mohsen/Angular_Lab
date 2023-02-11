@@ -1,0 +1,27 @@
+<h1>Registeration</h1>
+<div class="form">
+  <input type="text" placeholder="Name" [(ngModel)]="name" />
+  <div
+    style="color: rgb(42, 66, 6); text-align: center"
+    *ngIf="name.length <= 3 && name"
+  >
+    inValid Name (Valid Name grater than 3 chars)
+  </div>
+  <input type="text" placeholder="Age" [(ngModel)]="age" />
+  <div
+    style="color: rgb(42, 66, 6); text-align: center"
+    *ngIf="+age > 30; else ourDiv"
+  >
+    inValid Age (Valid Age from 20 to 30)
+  </div>
+  <ng-template #ourDiv>
+    <p>This is else case</p>
+  </ng-template>
+  <div
+    style="color: rgb(42, 66, 6); text-align: center"
+    *ngIf="+age < 20 && age"
+  >
+    inValid Age (Valid Age from 20 to 30)
+  </div>
+  <input type="button" value="ADD" (click)="fireNow()" />
+</div>
